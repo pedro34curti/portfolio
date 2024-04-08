@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <a href="./index.html"><button>Home</button></a>
+        <a href="./natureza.html"><button>Natureza</button></a>
+        <a href="./linguagens.html"><button>Linguagens</button></a>
+        <a href="./humanas.html"><button>Humanas</button></a>
+        <a href="./matematica.html"><button>Matemática</button></a>
+        <a href="./tecnico.html"><button>Técnico</button></a>
+    </header>
+    <div class="container">
+        <h1>Home</h1>
+        <button style="font-size: 1.2rem;" onclick="document.getElementById('sobre').showModal();">Sobre mim</button>
+        <img class="curriculo" src="./img/Currículo simples azul.png" alt="Curriculo" width="300px">
+        <img class="cronograma" src="./img/cronograma.png" alt="Cronograma" width="300px">
+    </div>
+    <dialog id="sobre">
+        <h1>Sobre mim</h1>
+        <p>Olá, meu nome é Pedro Henrique, nasci em Florianópolis SC, tenho 17 anos e já estudei em várias escolas: Expressão, Santa terezinha, Dinâmica, Cruz e souza e atualmente Sesi Senai.</p>
+        <p>Escolhi o Sesi Senai por indicação dos meus pais e por achar que é uma boa escola, com o ensino e método de aprendizagem diferente das outras, pois prepara da melhor forma para o mercado de trabalho e vestibular.
+            Estou no Terceiro ano do ensino médio fazendo o curso técnico do senai, tenho certeza que este ano promete muito tempo de aprendizado e conteúdo de qualidade para minha futura carreira de programador. </p>
+        <p>Gosto muito de ouvir musica e entre os meus favoritos tem: Alex G, The smiths, Sematary, Csh, TV girl e muitos outros.
+            Gosto muito de Star Wars, alguns filmes/Series de super herois como Invencivel e the boys.</p>
+        <button onclick="this.parentElement.close();">Voltar</button>
+    </dialog>
 </body>
+<script src="./script.js"></script>
 </html>

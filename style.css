@@ -1,0 +1,78 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-image: url(./img/486x486bb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+}
+
+header{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+button{
+    padding: 0.5rem;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 3px 3px 5px #00000066;
+}
+
+button:hover{
+    background-color: #f0f0f0;
+}
+
+dialog{
+    width: 80%;
+    border: none;
+    border-radius: 12px;
+    background-color: #ffffffd6;
+}
+
+.container{
+    text-align: center;
+}
+
+.container h1{
+    margin-top: 3rem;
+    color: #fff;
+    text-shadow: 3px 3px 1px #000000aa;
+}
+
+.materias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.materias button{
+    font-size: 1.2rem;
+}
+
+.curriculo{
+    position: absolute;
+    top: 8rem;
+    right: 4rem;
+}
+
+.cronograma{
+    position: absolute;
+    top: 8rem;
+    left: 4rem;
+    animation: ease-in-out;
+    transition: 600ms;
+}
+
+.cronograma:hover{
+    width: 700px;
+}
